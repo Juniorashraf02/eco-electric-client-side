@@ -1,0 +1,65 @@
+[
+    {
+        "_id":1,
+        "img":"https://cdn.pixabay.com/photo/2018/05/08/20/31/work-3383831_960_720.jpg",
+        "name": "Metel Cutter",
+        "description":"Brand new, imported from chaina last month",
+        "minimunOrder": 30,
+        "availableQuantity": 6500,
+        "price": 800
+    },
+    {
+        "_id":2,
+        "img":"https://cdn.pixabay.com/photo/2015/11/11/12/24/soldering-iron-1038540_960_720.jpg",
+        "name": "Soldering-iron",
+        "description":"Yellow color is available . This product is light weight",
+        "minimunOrder": 100,
+        "availableQuantity": 600,
+        "price": 50
+    },
+    {
+        "_id":3,
+        "img":"https://cdn.pixabay.com/photo/2018/05/09/12/04/voltage-tester-3385182_960_720.jpg",
+        "name": "Voltage-tester",
+        "description":"QC passed product and 1 year warranty",
+        "minimunOrder": 200,
+        "availableQuantity": 6250,
+        "price": 810
+    },
+    {
+        "_id":4,
+        "img":"https://cdn.pixabay.com/photo/2019/10/26/11/10/electrical-engineering-4579186_960_720.jpg",
+        "name": "Electical parts",
+        "description":"Available in different colors",
+        "minimunOrder": 1000,
+        "availableQuantity": 650,
+        "price": 80
+    },
+    {
+        "_id":5,
+        "img":"https://cdn.pixabay.com/photo/2017/09/30/03/40/spark-plug-2801172_960_720.jpg",
+        "name": "Spark-plug",
+        "description":"Imported form US",
+        "minimunOrder": 1100,
+        "availableQuantity": 1300,
+        "price": 50
+    },
+    {
+        "_id":6,
+        "img":"https://cdn.pixabay.com/photo/2020/05/28/04/16/electric-meter-5229750_960_720.jpg",
+        "name": "Electric Meter",
+        "description":"Imorted from Turkey",
+        "minimunOrder": 150,
+        "availableQuantity": 6250,
+        "price": 200
+    },
+    {
+        "_id":7,
+        "img":"https://cdn.pixabay.com/photo/2013/03/26/06/44/electricity-meter-96863_960_720.jpg",
+        "name": "Old Electric Meter",
+        "description":"Imported from Bangladesh",
+        "minimunOrder": 10,
+        "availableQuantity": 1650,
+        "price": 100
+    }
+]

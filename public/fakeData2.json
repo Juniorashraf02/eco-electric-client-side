@@ -1,0 +1,44 @@
+[
+    {
+        "_id":1,
+        "description":"Good products and I'm looking forward to do business with guys later",
+        "name":"Foxv",
+        "img":"https://cdn.pixabay.com/photo/2016/03/26/22/13/man-1281562_960_720.jpg",
+        "ratings": "5.00/5.00"
+    },
+    {
+        "_id":2,
+        "description":"Products working well also cheap products attracting the buyers",
+        "name":"Djxlsv",
+        "img":"https://cdn.pixabay.com/photo/2017/03/27/12/59/adult-2178560_960_720.jpg",
+        "ratings": "4.50/5.00"
+    },
+    {
+        "_id":3,
+        "description":"Brand new. Really liked it They provide good maintance too.I'm satified",
+        "name":"Orxsi",
+        "img":"https://cdn.pixabay.com/photo/2021/06/02/17/34/xiao-zhan-6305038_960_720.jpg",
+        "ratings": "5.00/5.00"
+    },
+    {
+        "_id":4,
+        "description":"I was looking for good products in cheap quality. Finally found it",
+        "name":"Medbic",
+        "img":"https://cdn.pixabay.com/photo/2016/07/22/16/56/portrait-1535271_960_720.jpg",
+        "ratings": "5.00/5.00"
+    },
+    {
+        "_id":5,
+        "description":"Amazing services! Very cheap products and branded quality products",
+        "name":"Rodriz",
+        "img":"https://cdn.pixabay.com/photo/2015/10/19/13/24/glass-995979_960_720.jpg",
+        "ratings": "5.00/5.00"
+    },
+    {
+        "_id":6,
+        "description":"Online delivery is amazing. Got the products on time!",
+        "name":"Nafiul",
+        "img":"https://cdn.pixabay.com/photo/2016/03/05/22/53/abstract-1239386_960_720.jpg",
+        "ratings": "5.00/5.00"
+    }
+]
