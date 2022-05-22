@@ -1,34 +1,48 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import auth from './../../../firebase.init';
+import { getAuth, signOut } from "firebase/auth";
+
 
 const Navbar = () => {
+    const [user, loading] = useAuthState(auth);
+    const handleSingOut = e => {
+        e.preventDefault();
+        const auth = getAuth();
+        signOut(auth).then(() => {
+            // Sign-out successful.
+        }).catch((error) => {
+            // window.confirm('please reload the page!');
+        });
+    }
     const menuItems = <>
-    <li className="font-semibold">
-        <Link to='/home'>Home</Link>
-    </li>
+        <li className="font-semibold">
+            <Link to='/home'>Home</Link>
+        </li>
 
-    <li className="font-semibold">
-        <Link to='/appointment'>Appointment</Link>
-    </li>
-    {/* {
+        <li className="font-semibold">
+            <Link to='/appointment'>Appointment</Link>
+        </li>
+        {/* {
         user &&
             <li className="font-semibold">
                 <Link to='/dashboard'>Dashboard</Link>
             </li>
             
     } */}
-    <li className="font-semibold">
-        <Link to='/review'>Review</Link>
-    </li>
-    <li className="font-semibold">
-        <Link to='/about'>About</Link>
-    </li>
-    <li className="font-semibold">
-        <Link to='/contact'>Contact Us</Link>
-    </li>
-</>
+        <li className="font-semibold">
+            <Link to='/review'>Review</Link>
+        </li>
+        <li className="font-semibold">
+            <Link to='/about'>About</Link>
+        </li>
+        <li className="font-semibold">
+            <Link to='/contact'>Contact Us</Link>
+        </li>
+    </>
     return (
-<div className="w-screen bg-blue-400 ">
+        <div className="w-screen bg-blue-400 ">
             <div className="navbar container mx-auto">
 
                 {/* dropdown for menu icon starts */}
@@ -52,7 +66,7 @@ const Navbar = () => {
                             {menuItems}
                         </ul>
                     </div>
-            
+
                     <div className="dropdown dropdown-end">
                         <label tabIndex="0" className="btn btn-ghost btn-circle">
                             <div className="indicator">
@@ -73,12 +87,12 @@ const Navbar = () => {
                     <div className="dropdown dropdown-end">
                         <label tabIndex="0" className="btn btn-ghost btn-circle avatar">
                             <div className="w-10 rounded-full">
-                                {/* {
+                                {
                                     user ?
                                         <img src={user.photoURL} alt="" />
                                         :
                                         <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png" alt="" />
-                                } */}
+                                }
                             </div>
                         </label>
                         <ul tabIndex="0" className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-slate-200 rounded-box w-52">
@@ -92,9 +106,12 @@ const Navbar = () => {
                                 <a href="#h">Settings</a>
                             </li>
                             <li>
-                          
-                                        <Link className="btn bg-blue-500 border-0 text-white" to='/login' href="#h">Log In</Link>
-                             
+                            {
+                                user ?
+                                    <Link to='/login' onClick={handleSingOut} className=" dropdown-item text-sm py-2 px-10 font-semibold rounded-lg whitespace-nowrap bg-transparent text-white bg-red-400 hover:bg-red-300">Log Out</Link>
+                                    :
+                                    <Link to='/login' className=" dropdown-item text-sm py-2 px-10 font-semibold rounded-lg whitespace-nowrap bg-transparent text-white  bg-blue-400 hover:bg-blue-300" href="#s">Log In</Link>
+                            }
                             </li>
                         </ul>
                     </div>
