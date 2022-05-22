@@ -3,7 +3,7 @@ import HomeReviewCard from './HomeReviewCard';
 
 const HomeReview = () => {
     const [reviews, setReviews] = useState([]);
-    fetch('fakeData2.json')
+    fetch('http://localhost:5000/reviews')
         .then(res => res.json())
         .then(data => {
             // console.log(data);
