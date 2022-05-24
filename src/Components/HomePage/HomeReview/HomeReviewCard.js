@@ -12,7 +12,7 @@ const HomeReviewCard = ({ review }) => {
             <div className="card-body text-left py-1">
                 <h2 className="card-title">{name}</h2>
                 <p className="text-gray-400">{description}</p>
-                <span className="text-yellow-600">ratings: {ratings}</span>
+                <span className="text-yellow-600">ratings: {ratings}/5</span>
             </div>
         </div>
     );

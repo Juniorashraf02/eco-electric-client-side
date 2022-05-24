@@ -12,6 +12,8 @@ import MyOrders from './Components/Dashboard/MyOrders/MyOrders';
 import AddAReview from './Components/Dashboard/AddAReview/AddAReview';
 import MyProfile from './Components/Dashboard/MyProfile/MyProfile';
 import Payment from './Components/Dashboard/Payment/Payment';
+import Reviews from './Components/Reviews/Reviews';
+import Myprofile from './Components/Myprofile/Myprofile';
 
 
 function App() {
@@ -39,6 +41,8 @@ function App() {
           <Route index element={<MyProfile/>}></Route>
         </Route>
 
+        <Route path="/myprofile" element={<Myprofile/>}></Route>
+        <Route path="/reviews" element={<Reviews/>}></Route>
         <Route path="/signup" element={<Signup/>}></Route>
         <Route path="/login" element={<Login/>}></Route>
         <Route path="*" element={<NotFound/>}></Route>

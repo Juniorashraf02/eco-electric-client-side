@@ -32,6 +32,9 @@ const Navbar = () => {
 
         }
         <li className="font-semibold">
+            <Link to='/reviews'>Reviews</Link>
+        </li>
+        <li className="font-semibold">
             <Link to='/blogs'>Blogs</Link>
         </li>
         <li className="font-semibold">
@@ -108,10 +111,10 @@ const Navbar = () => {
                                 <span className="h-0 text-gray-400 font-semibold">Signed in as {user?.displayName}</span>
                             </li>
                             <li>
-                                <a href="#h" className="justify-between">
+                                <Link to='/myprofile' className="justify-between">
                                     Profile
                                     <span className="badge">New</span>
-                                </a>
+                                </Link>
                             </li>
                             <li>
                                 <a href="#h">My portfolio</a>
