@@ -35,9 +35,6 @@ const Navbar = () => {
             <Link to='/reviews'>Reviews</Link>
         </li>
         <li className="font-semibold">
-            <Link to='/blogs'>blogs</Link>
-        </li>
-        <li className="font-semibold">
             <Link to='/blogs'>Blogs</Link>
         </li>
         <li className="font-semibold">
@@ -120,14 +117,14 @@ const Navbar = () => {
                                 </Link>
                             </li>
                             <li>
-                                <a href="#h">My portfolio</a>
+                                <Link to="portfolio">My portfolio</Link>
                             </li>
                             <li>
                                 {
                                     user ?
-                                        <Link to='/login' onClick={handleSingOut} className=" dropdown-item text-sm py-2 px-10 font-semibold rounded-lg whitespace-nowrap bg-transparent text-white bg-red-400 hover:bg-red-300">Log Out</Link>
+                                        <Link to='/login' onClick={handleSingOut} className="mt-3 dropdown-item text-sm py-2 px-10 font-semibold rounded-lg whitespace-nowrap bg-transparent text-white bg-red-400 hover:bg-red-300">Log Out</Link>
                                         :
-                                        <Link to='/login' className=" dropdown-item text-sm py-2 px-10 font-semibold rounded-lg whitespace-nowrap bg-transparent text-white  bg-blue-400 hover:bg-blue-300" href="#s">Log In</Link>
+                                        <Link to='/login' className=" mt-3dropdown-item text-sm py-2 px-10 font-semibold rounded-lg whitespace-nowrap bg-transparent text-white  bg-blue-400 hover:bg-blue-300" href="#s">Log In</Link>
                                 }
                                
                             </li>

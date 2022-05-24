@@ -15,6 +15,7 @@ import Payment from './Components/Dashboard/Payment/Payment';
 import Reviews from './Components/Reviews/Reviews';
 import Myprofile from './Components/Myprofile/Myprofile';
 import Blogs from './Components/Blogs/Blogs';
+import Portfolio from './Components/Portfolio/Portfolio';
 
 
 function App() {
@@ -43,6 +44,7 @@ function App() {
         </Route>
 
         <Route path="/myprofile" element={<Myprofile/>}></Route>
+        <Route path="/portfolio" element={<Portfolio/>}></Route>
         <Route path="/reviews" element={<Reviews/>}></Route>
         <Route path="/blogs" element={<Blogs/>}></Route>
         <Route path="/signup" element={<Signup/>}></Route>
