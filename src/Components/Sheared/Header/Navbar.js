@@ -6,7 +6,7 @@ import { getAuth, signOut } from "firebase/auth";
 
 
 const Navbar = () => {
-    const [user, loading] = useAuthState(auth);
+    const [user] = useAuthState(auth);
     const handleSingOut = e => {
         e.preventDefault();
         const auth = getAuth();
@@ -22,17 +22,17 @@ const Navbar = () => {
         </li>
 
         <li className="font-semibold">
-            <Link to='/appointment'>Appointment</Link>
+            <Link to='/overview'>Overview</Link>
         </li>
-        {/* {
-        user &&
+        {
+            user &&
             <li className="font-semibold">
                 <Link to='/dashboard'>Dashboard</Link>
             </li>
-            
-    } */}
+
+        }
         <li className="font-semibold">
-            <Link to='/review'>Review</Link>
+            <Link to='/blogs'>Blogs</Link>
         </li>
         <li className="font-semibold">
             <Link to='/about'>About</Link>
@@ -42,7 +42,7 @@ const Navbar = () => {
         </li>
     </>
     return (
-        <div className="w-screen bg-blue-400 ">
+        <div className="w-screen bg-blue-400 px-2 ">
             <div className="navbar container mx-auto">
 
                 {/* dropdown for menu icon starts */}
@@ -68,6 +68,12 @@ const Navbar = () => {
                     </div>
 
                     <div className="dropdown dropdown-end">
+
+                        {/* for drawer */}
+                    <label for="my-drawer-2" class="btn btn-ghost btn-circle  lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+                    </label>
+
                         <label tabIndex="0" className="btn btn-ghost btn-circle">
                             <div className="indicator">
                                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
@@ -85,6 +91,8 @@ const Navbar = () => {
                         </div>
                     </div>
                     <div className="dropdown dropdown-end">
+      
+
                         <label tabIndex="0" className="btn btn-ghost btn-circle avatar">
                             <div className="w-10 rounded-full">
                                 {
@@ -95,7 +103,10 @@ const Navbar = () => {
                                 }
                             </div>
                         </label>
-                        <ul tabIndex="0" className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-slate-200 rounded-box w-52">
+                        <ul tabIndex="0" className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-slate-200 rounded-box w-52 font-semibold">
+                            <li>
+                                <span className="h-0 text-gray-400 font-semibold">Signed in as {user?.displayName}</span>
+                            </li>
                             <li>
                                 <a href="#h" className="justify-between">
                                     Profile
@@ -103,15 +114,16 @@ const Navbar = () => {
                                 </a>
                             </li>
                             <li>
-                                <a href="#h">Settings</a>
+                                <a href="#h">My portfolio</a>
                             </li>
                             <li>
-                            {
-                                user ?
-                                    <Link to='/login' onClick={handleSingOut} className=" dropdown-item text-sm py-2 px-10 font-semibold rounded-lg whitespace-nowrap bg-transparent text-white bg-red-400 hover:bg-red-300">Log Out</Link>
-                                    :
-                                    <Link to='/login' className=" dropdown-item text-sm py-2 px-10 font-semibold rounded-lg whitespace-nowrap bg-transparent text-white  bg-blue-400 hover:bg-blue-300" href="#s">Log In</Link>
-                            }
+                                {
+                                    user ?
+                                        <Link to='/login' onClick={handleSingOut} className=" dropdown-item text-sm py-2 px-10 font-semibold rounded-lg whitespace-nowrap bg-transparent text-white bg-red-400 hover:bg-red-300">Log Out</Link>
+                                        :
+                                        <Link to='/login' className=" dropdown-item text-sm py-2 px-10 font-semibold rounded-lg whitespace-nowrap bg-transparent text-white  bg-blue-400 hover:bg-blue-300" href="#s">Log In</Link>
+                                }
+                               
                             </li>
                         </ul>
                     </div>

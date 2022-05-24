@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const ToolsCard = ({ tool }) => {
-    const { img, name, description, price, availableQuantity, minimunOrder, _id } = tool;
+    const { img, toolName, description, price, availableQuantity, minimunOrder, _id } = tool;
     const navigate = useNavigate();
     const navigateToPurchase = id =>{
         navigate(`/purchase/${id}`)
@@ -13,7 +13,7 @@ const ToolsCard = ({ tool }) => {
                 <img className="rounded-lg" src={img} alt=""/>
             </figure>
             <div className="card-body">
-                <h2 className="card-title">{name}</h2>
+                <h2 className="card-title">{toolName}</h2>
                 <p>Description: {description}</p>
                 <p>Price: ${price}</p>
                 <p>Available Quantity: {availableQuantity}</p>
