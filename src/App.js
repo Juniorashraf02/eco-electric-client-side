@@ -14,6 +14,7 @@ import MyProfile from './Components/Dashboard/MyProfile/MyProfile';
 import Payment from './Components/Dashboard/Payment/Payment';
 import Reviews from './Components/Reviews/Reviews';
 import Myprofile from './Components/Myprofile/Myprofile';
+import Blogs from './Components/Blogs/Blogs';
 
 
 function App() {
@@ -43,6 +44,7 @@ function App() {
 
         <Route path="/myprofile" element={<Myprofile/>}></Route>
         <Route path="/reviews" element={<Reviews/>}></Route>
+        <Route path="/blogs" element={<Blogs/>}></Route>
         <Route path="/signup" element={<Signup/>}></Route>
         <Route path="/login" element={<Login/>}></Route>
         <Route path="*" element={<NotFound/>}></Route>
