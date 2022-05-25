@@ -6,18 +6,122 @@ const Portfolio = () => {
         <div className="mt-28 container mx-auto w-3/4">
 
             <img className="mx-auto" src={img} alt="" />
-            <h1 className="text-2xl text-blue-700 font-bold text-left"><span className="text-red-400">Hi</span> there!!! <br /> I am <span className="text-red-400">MD. Istiak Ashraf</span></h1>
-            <p className="text-gray-500 text-justify">
+            <span className="text-2xl text-blue-700 font-bold text-left"><span className="text-red-400">Hi</span> there!!! <br /> I am <span className="text-red-400">MD. Istiak Ashraf</span></span>
+            <p className=" text-justify">
 
-                <p className="mt-5">I'm an Undergrad student, class representative, transformation leader, graphic designer and also a front-end web developer. I have achieved 1st position with my team in Hult Prize at Pabna Textile Engineering College. Also achieved 11th position in distinguished National Undergrad level competition Textile Talent Hunt season 7 at Pabna Textile Engineering College Zone. I with some of my seniors and my batchmates formed a group called "Coding School" in 2017 and its main intention was to introduce the coding languages to the school level students. We had a YouTube Channel named "Coding School". We were also covering some basic ICT knowledges in our workshops and channels</p>
+                <p className="mt-5">
+                    <p className="mt-5">
+                        <span className="text-semibold text-blue-400 my-20 text-2xl"> CARRIER OBJECTIVE</span>
+                    </p>
+                    ➤ I am a dedicated and practicing full stack developer with solid knowledge in different technologies and
+                    self-motivated and hardworking for an opportunity to work in a challenging environment to prove my skills and
+                    utilize my knowledge in the growth of the organization
+                </p>
 
-                <p className="mt-5"> I Have experience in working with teams, different proggrams, seminars and workshops. Expert in Adobe Photoshop, Adobe Illustrator, MS Word, Googe Docs, Microsoft PowerPoint. Also have knowledge in Digital marketing.</p>
+                <p className="mt-5">
+                    <span className="text-semibold text-blue-400 my-20 text-2xl"> SKILLS</span>
+                </p>
+                <span>
+                    <b>Expertise:</b> React.js, JavaScript, HTML, CSS, Bootstrap, tailwind CSS, Firebase <br />
+                    <b>Comfortable:</b> Express.js, MongoDB, JWT <br />
+                    <b>Familiar:</b> Redux, Context API, REST API, Browser APIs.<br />
+                    <b> Tools:</b> Git, Github, VS Code, Firebase, Heroku, Figma, Adobe XD, Adobe photoshop, Adobe Illustrator
 
-                <p className="mt-5">Studying in B.Sc. in Apparel Department at Pabna Textile Engineering College, Pabna, Bangladesh. Finished A level education from Bogura Govt. Azizul Haque College, Bogura, Bangladesh and O level from Bogura Zilla School, Bogura, Bangladesh</p>
+                </span>
 
-                <p className="mt-5">I'm a Textile engineer. But now I'm learning Fontend Development at Programming Hero. Learning React-JS, Firebase, JavaScript, HTML, CSS etc. I am a fast learner, explorer and hard worker. I also want to achieve my goal. For this I am doing a lot of hard work in programming hero so that my goal is to become a successful fontend developer.</p>
+                <p className="text-semibold text-blue-400 mt-10 text-2xl">
+                    PROJECTS
+                </p>
+                <div>
+                    <div>
+                        <span>➤ <span classname="font-semibold">Fruits Management</span> |
+                            <span classname="font-semibold">Full stack project</span> | <span classname="font-semibold">
+                                <u>
+                                    <a href="https://warehouse-management-80db8.web.app/">Live Site</a>
+                                </u>
+                            </span> |
+                            <span classname="font-semibold">
+                                <u>
+                                    <a href="https://github.com/Juniorashraf02/fruits-management-client-side">Github-Client</a></u></span> | <span classname="font-semibold">
+                                <u>
+                                    <a href="https://github.com/Juniorashraf02/fruits-management-server-side">Github-Server</a></u></span> | <span classname="font-semibold">Features:</span></span>
+                    </div>
+                    <div>
+                        <span>• Users can add an item and can delete it</span> <br />
+                        <span>• Logged in users can add or decrease their quantity</span>
+                    </div>
+                    <div>
+                        <span>Used: React.js, React Router, Express.js, MongoDB, Firebase Authentication, Tailwind CSS</span>
+                    </div>
+                </div>
+                <div className="mt-5">
+                    <div>
+                        <span>➤
+                            Doctors Portal | &nbsp;
+                            <span classname="font-semibold">Full stack project</span> |  &nbsp;
+                            <span classname="font-semibold">
+                                <u><a classname="" href="https://doctors-portal-1d0a4.web.app/">Doctors Portal</a></u>
+                            </span> | <span classname="font-semibold">
+                                <u>
+                                    <a href="https://github.com/Juniorashraf02/doctors-portal-client-side">Github-Client</a>
+                                </u>
+                            </span> |&nbsp;
+                            <span classname="font-semibold">
+                                <u>
+                                    <a href="https://github.com/Juniorashraf02/doctors-portal-server-side"> Github-Server</a>
+                                </u>
+                            </span> | &nbsp;
+                            <span classname="font-semibold">Features:</span>
+                        </span>
+                    </div>
+                    <div>
+                        <span>• Logged in users can book a service</span> <br />
+                        <span>• Payment method is added</span> <br />
+                        <span>• Admin can make another admin. Some routes are only for admin. General users can’t enter into it</span> <br />
+                    </div>
+                    <div>
+                        <span>Used: React.js, React Router, Express.js, MongoDB, Firebase Authentication, Tailwind CSS</span>
+                    </div>
+                </div>
+                <div>
+                    <p className="mt-5">
+                        <span className="text-semibold text-blue-400 my-20 text-2xl">  EDUCATION</span>
+                    </p>
+
+                    <div>
+                        Pabna Textile Engineering College, Pabna, Bangladesh <br />
+                        B.Sc (Hons) in textile Engineering (Undergraduate) <br />
+                        Graduation Year: 2024 (appoximately ) <br />
+                    </div>
+
+                </div>
+
+
+                <div>
+                    <p className="mt-5">
+                        <span className="text-semibold text-blue-400 my-20 text-2xl">  LANGUAGE</span>
+                    </p>
+
+                    <div>
+                        • English - Conversational <br />
+                        • Hindi - Fluent <br />
+                        • Bangla - Native  <br />
+                    </div>
+                </div>
+
+                <div>
+                    <p className="mt-5">
+                        <span className="text-semibold text-blue-400 my-20 text-2xl">                      EXTRA CURRICULAR ACTIVITIES
+                        </span>
+                    </p>
+                    <div className="mb-20">
+                        ➤ Achieved 11th position in distinguished National Undergrad level competition Textile Talent Hunt season 7 at
+                        Pabna Textile Engineering College Zone <br />
+                        ➤ Me and my team acquired first place in Hult Prize at campus competition <br />
+                    </div>
+                </div>
             </p>
-        </div>
+        </div >
     );
 };
 

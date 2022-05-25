@@ -10,7 +10,6 @@ import RequireAuth from './Components/Authentication/RequireAuth/RequireAuth';
 import Dashboard from './Components/Dashboard/Dashboard';
 import MyOrders from './Components/Dashboard/MyOrders/MyOrders';
 import AddAReview from './Components/Dashboard/AddAReview/AddAReview';
-import MyProfile from './Components/Dashboard/MyProfile/MyProfile';
 import Payment from './Components/Dashboard/Payment/Payment';
 import Reviews from './Components/Reviews/Reviews';
 import Myprofile from './Components/Myprofile/Myprofile';
@@ -20,6 +19,7 @@ import Users from './Components/Dashboard/Users/Users';
 import AddProducts from './Components/Dashboard/AddProducts/AddProducts';
 import ManageProducts from './Components/Dashboard/ManageProducts/ManageProducts';
 import ManageOrders from './Components/Dashboard/ManageOrders/ManageOrders';
+import Profile from './Components/Dashboard/Profile/Profile';
 
 
 function App() {
@@ -44,11 +44,11 @@ function App() {
           <Route path="myorders" element={<MyOrders/>}></Route>
           <Route path="payment/:id" element={<Payment/>}></Route>
           <Route path="myreviews" element={<AddAReview/>}></Route>
-          <Route index element={<MyProfile/>}></Route>
         <Route path="users" element={<Users/>}></Route>
         <Route path="addproduct" element={<AddProducts/>}></Route>
         <Route path="manageProduct" element={<ManageProducts/>}></Route>
         <Route path="manageorders" element={<ManageOrders/>}></Route>
+        <Route path="myprofile" element={<Profile/>}></Route>
         </Route>
 
         <Route path="/myprofile" element={<Myprofile/>}></Route>
