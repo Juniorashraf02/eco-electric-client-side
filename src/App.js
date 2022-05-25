@@ -18,6 +18,8 @@ import Blogs from './Components/Blogs/Blogs';
 import Portfolio from './Components/Portfolio/Portfolio';
 import Users from './Components/Dashboard/Users/Users';
 import AddProducts from './Components/Dashboard/AddProducts/AddProducts';
+import ManageProducts from './Components/Dashboard/ManageProducts/ManageProducts';
+import ManageOrders from './Components/Dashboard/ManageOrders/ManageOrders';
 
 
 function App() {
@@ -45,6 +47,8 @@ function App() {
           <Route index element={<MyProfile/>}></Route>
         <Route path="users" element={<Users/>}></Route>
         <Route path="addproduct" element={<AddProducts/>}></Route>
+        <Route path="manageProduct" element={<ManageProducts/>}></Route>
+        <Route path="manageorders" element={<ManageOrders/>}></Route>
         </Route>
 
         <Route path="/myprofile" element={<Myprofile/>}></Route>
