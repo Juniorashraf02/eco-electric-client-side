@@ -20,6 +20,7 @@ import AddProducts from './Components/Dashboard/AddProducts/AddProducts';
 import ManageProducts from './Components/Dashboard/ManageProducts/ManageProducts';
 import ManageOrders from './Components/Dashboard/ManageOrders/ManageOrders';
 import Profile from './Components/Dashboard/Profile/Profile';
+import AllTool from './Components/HomePage/Tools/AllTool';
 
 
 function App() {
@@ -51,6 +52,7 @@ function App() {
         <Route path="myprofile" element={<Profile/>}></Route>
         </Route>
 
+        <Route path="/alltool" element={<AllTool/>}></Route>
         <Route path="/myprofile" element={<Myprofile/>}></Route>
         <Route path="/portfolio" element={<Portfolio/>}></Route>
         <Route path="/reviews" element={<Reviews/>}></Route>
