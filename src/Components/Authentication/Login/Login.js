@@ -7,13 +7,15 @@ import { useLocation } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import auth from '../../../firebase.init';
+import useToken from '../../../Hooks/useToken';
 
 const Login = () => {
     const [signInWithGoogle, googleUser, googleLoading, googleError] = useSignInWithGoogle(auth);
     const [signInWithEmailAndPassword, emailUser, emailLoading, emailError] = useSignInWithEmailAndPassword(auth);
     const { register, handleSubmit, formState: { errors } } = useForm();
     const [sendPasswordResetEmail, sending, error] = useSendPasswordResetEmail(auth);
-    const [user] = useAuthState(auth);
+    // const [user] = useAuthState(auth);
+    const [token] = useToken(emailUser||googleUser);
 
 
     let navigate = useNavigate();
@@ -27,11 +29,11 @@ const Login = () => {
 
     useEffect(() => {
 
-        if (user) {
+        if (token) {
             navigate(from, { replace: true });
         }
 
-    }, [user]);
+    }, [navigate, from , token]);
 
 
     const [email, setEmail] = useState();

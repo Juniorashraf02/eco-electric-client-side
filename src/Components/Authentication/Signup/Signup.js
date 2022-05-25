@@ -1,9 +1,10 @@
 import React from 'react';
 import { useCreateUserWithEmailAndPassword, useSignInWithGoogle, useUpdateProfile } from 'react-firebase-hooks/auth';
 import { useForm } from "react-hook-form";
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import useToken from '../../../Hooks/useToken';
 import auth from './../../../firebase.init';
+import { useEffect } from 'react';
 
 const Signup = () => {
     const [signInWithGoogle, googleUser, googleLoading, googleError] = useSignInWithGoogle(auth);
@@ -11,20 +12,24 @@ const Signup = () => {
     const [updateProfile, updating, updateError] = useUpdateProfile(auth);
     const { register, handleSubmit, formState: { errors } } = useForm();
     const [token] = useToken(emailUser||googleUser);
-    const navigate = useNavigate();
-    // const [user]= useAuthState(auth);
 
-
+    let navigate = useNavigate();
+    let location = useLocation();
+    let from = location.state?.from?.pathname || "/";
 
     let errorMessage;
+
+    
+
+    useEffect(() => {
+        if (token) {
+            navigate(from, { replace: true });
+        }
+    }, [navigate, from , token]);
 
     const loading = googleLoading||emailLoading||updating;
     if(loading){
             return <button className="btn loading mt-10">loading</button>
-    }
-
-    if(token){
-        navigate('/appointment');
     }
 
 

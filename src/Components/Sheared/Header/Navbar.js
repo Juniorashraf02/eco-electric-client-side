@@ -11,6 +11,7 @@ const Navbar = () => {
     const name = user?.email.split('@')[0];
     const handleSingOut = e => {
         e.preventDefault();
+        localStorage.removeItem('accessToken')
         const auth = getAuth();
         signOut(auth).then(() => {
             // Sign-out successful.
