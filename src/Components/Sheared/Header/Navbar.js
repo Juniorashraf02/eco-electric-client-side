@@ -7,6 +7,8 @@ import { getAuth, signOut } from "firebase/auth";
 
 const Navbar = () => {
     const [user] = useAuthState(auth);
+    // console.log(user);
+    const name = user?.email.split('@')[0];
     const handleSingOut = e => {
         e.preventDefault();
         const auth = getAuth();
@@ -108,7 +110,7 @@ const Navbar = () => {
                         </label>
                         <ul tabIndex="0" className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-slate-200 rounded-box w-52 font-semibold">
                             <li>
-                                <span className="h-0 text-gray-400 font-semibold">Signed in as {user?.displayName}</span>
+                                <span className="h-0 text-gray-400 font-semibold">Signed in as {user?.displayName||name}</span>
                             </li>
                             <li>
                                 <Link to='/myprofile' className="justify-between">
