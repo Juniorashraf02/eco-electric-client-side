@@ -17,6 +17,7 @@ import Myprofile from './Components/Myprofile/Myprofile';
 import Blogs from './Components/Blogs/Blogs';
 import Portfolio from './Components/Portfolio/Portfolio';
 import Users from './Components/Dashboard/Users/Users';
+import AddProducts from './Components/Dashboard/AddProducts/AddProducts';
 
 
 function App() {
@@ -43,6 +44,7 @@ function App() {
           <Route path="myreviews" element={<AddAReview/>}></Route>
           <Route index element={<MyProfile/>}></Route>
         <Route path="users" element={<Users/>}></Route>
+        <Route path="addproduct" element={<AddProducts/>}></Route>
         </Route>
 
         <Route path="/myprofile" element={<Myprofile/>}></Route>

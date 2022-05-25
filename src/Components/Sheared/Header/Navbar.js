@@ -19,6 +19,10 @@ const Navbar = () => {
             // window.confirm('please reload the page!');
         });
     }
+
+   
+
+
     const menuItems = <>
         <li className="font-semibold">
             <Link to='/home'>Home</Link>
