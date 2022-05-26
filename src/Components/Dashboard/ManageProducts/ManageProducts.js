@@ -4,7 +4,7 @@ import ManageSIngleProduct from './ManageSIngleProduct';
 const ManageProducts = () => {
     const [tools, setTools] = useState([]);
 
-    fetch('http://localhost:5000/tools',{
+    fetch('https://ancient-plateau-85212.herokuapp.com/tools',{
         method: 'GET',
         headers: {
             'Content-Type': 'application/json',

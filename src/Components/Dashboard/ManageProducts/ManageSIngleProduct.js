@@ -3,7 +3,7 @@ import React from 'react';
 const ManageSIngleProduct = ({tool,setTools,tools}) => {
     const { img, toolName, description, price, availableQuantity, minimunOrder, _id } = tool;
     const handleDelete = id =>{
-       fetch(`http://localhost:5000/tools/${id}`,{
+       fetch(`https://ancient-plateau-85212.herokuapp.com/tools/${id}`,{
            method: 'DELETE'
        })
        .then(res=> res.json())

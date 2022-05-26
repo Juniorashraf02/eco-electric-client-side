@@ -7,7 +7,7 @@ const Profile = () => {
     const [user] = useAuthState(auth);
     const navigate = useNavigate();
     const [info, setInfo] = useState([]);
-    fetch(`http://localhost:5000/profile?email=${user.email}`)
+    fetch(`https://ancient-plateau-85212.herokuapp.com/profile?email=${user.email}`)
         .then(res => res.json())
         .then(data => {
             setInfo(data);

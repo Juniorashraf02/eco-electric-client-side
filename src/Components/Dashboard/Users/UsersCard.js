@@ -3,7 +3,7 @@ import React from 'react';
 const UsersCard = ({ user }) => {
     const {email,role} = user;
     const makeAdmin=e=>{
-        fetch(`http://localhost:5000/users/admin/${email}`,{
+        fetch(`https://ancient-plateau-85212.herokuapp.com/users/admin/${email}`,{
             method: 'PUT',
             headers: {
                 'authorization': `Bearer ${localStorage.getItem('accessToken')}`

@@ -9,7 +9,7 @@ const Myprofile = () => {
     const { register, handleSubmit } = useForm();
     const onSubmit = data => {
       console.log(data);
-      const url = `http://localhost:5000/profile?email=${user.email}`
+      const url = `https://ancient-plateau-85212.herokuapp.com/profile?email=${user.email}`
       
         fetch(url, {
           method: "PUT",

@@ -7,7 +7,7 @@ const MyOrdersCard = ({ singleOrder, ordersCollection, setOrdersCollection }) =>
 
 
     const handleCancel = id => {
-        const url = `http://localhost:5000/orders/${id}`
+        const url = `https://ancient-plateau-85212.herokuapp.com/orders/${id}`
         fetch(url, {
             method: 'DELETE',
         })

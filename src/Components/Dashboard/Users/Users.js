@@ -3,7 +3,7 @@ import UsersCard from './UsersCard';
 
 const Users = () => {
     const [users, setUsers] = useState([]);
-    fetch('http://localhost:5000/users')
+    fetch('https://ancient-plateau-85212.herokuapp.com/users')
     .then(res => res.json())
     .then(data=>{
         setUsers(data);

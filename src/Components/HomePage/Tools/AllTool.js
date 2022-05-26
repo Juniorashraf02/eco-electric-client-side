@@ -4,7 +4,7 @@ import ToolsCard from './ToolsCard';
 const AllTool = () => {
     const [tools, setTools] = useState([]);
 
-    fetch('http://localhost:5000/tools')
+    fetch('https://ancient-plateau-85212.herokuapp.com/tools')
         .then(res => res.json())
         .then(data => {
             // console.log(data);

@@ -9,7 +9,7 @@ const AddAReview = () => {
     const { register, handleSubmit } = useForm();
     const onSubmit = data => {
       console.log(data);
-      const url = `http://localhost:5000/reviews`
+      const url = `https://ancient-plateau-85212.herokuapp.com/reviews`
       
         fetch(url, {
           method: "POST",

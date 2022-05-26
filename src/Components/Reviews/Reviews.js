@@ -3,7 +3,7 @@ import HomeReviewCard from '../HomePage/HomeReview/HomeReviewCard';
 
 const Reviews = () => {
     const [reviews, setReviews] = useState([]);
-    fetch('http://localhost:5000/reviews')
+    fetch('https://ancient-plateau-85212.herokuapp.com/reviews')
         .then(res => res.json())
         .then(data => {
             // console.log(data);

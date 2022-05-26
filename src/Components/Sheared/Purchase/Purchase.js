@@ -7,7 +7,7 @@ const Purchase = () => {
     const { id } = useParams();
     const [user] = useAuthState(auth);
     const [tool, setTool] = useState([]);
-    const url = `http://localhost:5000/tools/${id}`
+    const url = `https://ancient-plateau-85212.herokuapp.com/tools/${id}`
     useEffect(() => {
         fetch(url)
             .then(res => res.json())
@@ -57,7 +57,7 @@ const Purchase = () => {
 
             console.log(data);
 
-            const url2 = `http://localhost:5000/orders`
+            const url2 = `https://ancient-plateau-85212.herokuapp.com/orders`
             fetch(url2, {
                 method: 'POST',
                 headers: {

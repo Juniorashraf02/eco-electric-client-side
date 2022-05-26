@@ -9,7 +9,7 @@ const stripePromise = loadStripe('pk_test_51L1dg0B5WMGrt28lrlvH9mAZ9Wg6rgSUqLsXp
 const Payment = () => {
     const [orders, setOrders] = useState([]);
     const { id } = useParams();
-    const url = `http://localhost:5000/orders/${id}`
+    const url = `https://ancient-plateau-85212.herokuapp.com/orders/${id}`
     fetch(url)
         .then(res => res.json())
         .then(data => {

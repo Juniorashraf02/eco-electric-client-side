@@ -11,7 +11,7 @@ const MyOrders = () => {
     const navigate= useNavigate();
     useEffect(() => {
         const email = user.email;
-        const url = `http://localhost:5000/orders?email=${email}`
+        const url = `https://ancient-plateau-85212.herokuapp.com/orders?email=${email}`
         console.log(url);
 
         fetch(url,{
