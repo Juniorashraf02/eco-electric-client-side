@@ -1,9 +1,12 @@
 import React from 'react';
 import img from '../../Images/istiak.png'
+import { SiFacebook } from 'react-icons/si';
+import { SiGmail } from 'react-icons/si';
+import { BsWhatsapp, BsMessenger, BsGithub, BsLinkedin } from 'react-icons/bs';
 
 const Portfolio = () => {
     return (
-        <div className="mt-28 container mx-auto w-3/4">
+        <div className="mt-28 container mx-auto w-3/4 font-sans ">
 
             <img className="mx-auto" src={img} alt="" />
             <span className="text-2xl text-blue-700 font-bold text-left"><span className="text-red-400">Hi</span> there!!! <br /> I am <span className="text-red-400">MD. Istiak Ashraf</span></span>
@@ -121,6 +124,30 @@ const Portfolio = () => {
                     </div>
                 </div>
             </p>
+            <div className=" pt-9 ">
+                <p className="uppercase text-gray-400 font-semibold mb-5">Follw me on</p>
+                <div className="flex justify-center mb-9 ">
+                    <a className="text-2xl" style={{ "color": "black", "marginLeft": "10px" }} target="_blank" href="https://www.facebook.com/juniorashraf02" rel="noreferrer">
+                        <SiFacebook></SiFacebook>
+                    </a>
+                    <a className="text-2xl" style={{ "color": "black", "marginLeft": "30px" }} target="_blank" href="https://www.linkedin.com/in/istiakashraf/" rel="noreferrer">
+                        <BsLinkedin></BsLinkedin>
+                    </a>
+                    <a className="text-2xl" style={{ "color": "black", "marginLeft": "30px" }} target="_blank" href="mailto:shuvo.istiak11@gmail.com" rel="noreferrer">
+                        <SiGmail></SiGmail>
+                    </a>
+                    <a className="text-2xl" style={{ "color": "black", "marginLeft": "30px" }} target="_blank" href=" https://wa.me/+8801612016614">
+                        <BsWhatsapp></BsWhatsapp>
+                    </a>
+                    <a className="text-2xl" style={{ "color": "black", "marginLeft": "30px" }} target="_blank" href="http://m.me/juniorashraf02" rel="noreferrer">
+                        <BsMessenger></BsMessenger>
+                    </a>
+                    <a className="text-2xl" style={{ "color": "black", "marginLeft": "30px" }} target="_blank" href="https://github.com/Juniorashraf02" rel="noreferrer">
+                        <BsGithub></BsGithub>
+                    </a>
+
+                </div>
+            </div>
         </div >
     );
 };

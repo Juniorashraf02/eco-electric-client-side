@@ -27,10 +27,6 @@ const Navbar = () => {
         <li className="font-semibold">
             <Link to='/home'>Home</Link>
         </li>
-
-        <li className="font-semibold">
-            <Link to='/overview'>Overview</Link>
-        </li>
         {
             user &&
             <li className="font-semibold">
