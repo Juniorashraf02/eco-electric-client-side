@@ -3,15 +3,19 @@ import React from 'react';
 const ManageSIngleProduct = ({tool,setTools,tools}) => {
     const { img, toolName, description, price, availableQuantity, minimunOrder, _id } = tool;
     const handleDelete = id =>{
-       fetch(`https://ancient-plateau-85212.herokuapp.com/tools/${id}`,{
-           method: 'DELETE'
-       })
-       .then(res=> res.json())
-       .then(data=>{
-           console.log(data);
-           const remainig = tools.filter(p=>p._id !== id);
-           setTools(remainig)
-       })
+        const proceed = window.confirm('Deleted items can not be recoverd. Do you want to proceed?');
+        if(proceed){
+
+            fetch(`https://ancient-plateau-85212.herokuapp.com/tools/${id}`,{
+                method: 'DELETE'
+            })
+            .then(res=> res.json())
+            .then(data=>{
+                console.log(data);
+                const remainig = tools.filter(p=>p._id !== id);
+                setTools(remainig)
+            })
+        }
     }
     return (
         <div className="text-left bg-slate-200 border-1 rounded-lg shadow-lg">

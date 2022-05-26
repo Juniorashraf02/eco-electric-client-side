@@ -16,7 +16,7 @@ const Users = () => {
             <h1 className="text-2xl text-semibold text-sky-500">All Users: {users.length} </h1>
             {
                 users.map(user=><UsersCard
-                key={user._id} user={user}
+                key={user._id} user={user} setUsers={setUsers}
                 ></UsersCard>)
             }
         </div>

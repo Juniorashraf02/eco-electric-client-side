@@ -3,8 +3,8 @@ import appImage from '../../../Images/01.png';
 const DownloadAppSection = () => {
     return (
         <div >
-            <p id="downloadApp" className='font-semibold text-4xl text-rose-300 my-10' >Download Our App</p>
-            <div className="md:flex my-28 p-5 justify-center items-center container mx-auto">
+            <p id="downloadApp" className='font-semibold text-4xl text-rose-300 my-20' >Download Our App</p>
+            <div className="md:flex mb-28 p-5 justify-center items-center container mx-auto">
                 <div>
                     <img className='object-cover rounded-lg animate-pulse' src={appImage} alt="" />
                 </div>

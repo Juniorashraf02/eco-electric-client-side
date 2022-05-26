@@ -11,27 +11,23 @@ const Profile = () => {
         .then(res => res.json())
         .then(data => {
             setInfo(data);
-            console.log(data);
         });
-        const navigateTo =e=>{
-            navigate('/myprofile')
-        }
+    const navigateTo = e => {
+        navigate('/myprofile')
+    }
+    console.log(info)
     return (
-       <div>
-            <div class="card card-compact w-96 bg-base-100 shadow-xl mt-24">
+        <div>
+            <div class="card card-compact w-96 bg-base-100 p-5 my-10 shadow-xl mt-24 text-justify mx-auto">
                 {info.length}
-            {
-                info.map(p => <div p={p} key={p._id}
-                
-                >
-                    <h2 class="card-title">email: {p.email}</h2>
-                    <p>educaiton: {p?.educaiton}</p>
-                    
-                </div>)
-            }
+               <p>email:  {user?.email}</p>
+               <p>name:  {info?.data?.name}</p>
+               <p>Facebook:  {info?.data?.fb}</p>
+               <p>LinkedIn:  {info?.data?.linkedin}</p>
+               <p>Phone No:  {info?.data?.phone}</p>
+            </div>
+            <button onClick={navigateTo} className="btn btn-info">Update Profile</button>
         </div>
-        <button onClick={navigateTo} className="btn btn-info">Update Profile</button>
-       </div>
     );
 };
 

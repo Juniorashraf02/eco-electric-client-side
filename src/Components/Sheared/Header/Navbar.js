@@ -86,7 +86,7 @@ const Navbar = () => {
                                 <span className="badge badge-sm indicator-item">8</span>
                             </div>
                         </label>
-                        <div tabIndex="0" className="mt-3 card card-compact dropdown-content w-52 bg-slate-200 shadow">
+                        {/* <div tabIndex="0" className="mt-3 card card-compact dropdown-content w-52 bg-slate-200 shadow">
                             <div className="card-body">
                                 <span className="font-bold text-lg">8 Items</span>
                                 <span className="text-gray-600">Subtotal: $999</span>
@@ -94,7 +94,7 @@ const Navbar = () => {
                                     <button className="btn btn-primary btn-block">View cart</button>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                     <div className="dropdown dropdown-end">
       

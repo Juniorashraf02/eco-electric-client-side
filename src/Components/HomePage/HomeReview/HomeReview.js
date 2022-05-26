@@ -18,7 +18,7 @@ const HomeReview = () => {
         }
     return (
         <div >
-            <h1 className="text-semibold text-blue-400 my-20 text-2xl">Some reviews of our customers</h1>
+            <h1 className="font-bold text-blue-400 my-20 text-2xl">Some reviews of our customers</h1>
             <div className="my-5">
                 <div className="card grid md:grid-cols-3 gap-5 container mx-auto">
                     {
@@ -28,7 +28,7 @@ const HomeReview = () => {
                     }
                 </div>
             </div>
-            <button onClick={navigateToReview} className="btn btn-info">See all reviews  &#8622;</button>
+            <button onClick={navigateToReview} className="btn btn-info">See all reviews </button>
         </div>
     );
 };
