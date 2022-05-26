@@ -4,6 +4,8 @@ import BusinessSummary from '../BusinessSummary/BusinessSummary';
 import HomeReview from '../HomeReview/HomeReview';
 import Tools from '../Tools/Tools';
 import Footer from './../Footer/Footer';
+import DownloadAppSection from './../DownloadAppSection/DownloadAppSection';
+import Hiring from '../Hiring/Hiring';
 
 const Home = () => {
     return (
@@ -12,6 +14,8 @@ const Home = () => {
             <Tools/>
             <BusinessSummary/>
             <HomeReview/>
+            <DownloadAppSection/>
+            <Hiring/>
             <Footer/>
         </div>
     );

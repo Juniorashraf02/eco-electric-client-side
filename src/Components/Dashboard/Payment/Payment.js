@@ -17,7 +17,7 @@ const Payment = () => {
             // console.log(data);
         });
     return (
-        <div className="mt-10 flex gap-10 justify-center items-center">
+        <div className="mt-10 mx-auto gap-10 justify-center items-center">
 
             <div class="card card-compact w-96 bg-base-100 shadow-xl">
                 <figure>
@@ -30,9 +30,12 @@ const Payment = () => {
                 </div>
                 
             </div>
-            <Elements stripe={stripePromise}>
+            <div className="mt-10  w-80">
+            <Elements  stripe={stripePromise}>
                               <PaymentForm orders={orders}></PaymentForm>
                         </Elements>
+            </div>
+           
         </div>
     );
 };

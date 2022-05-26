@@ -66,6 +66,7 @@ const Purchase = () => {
                 body: JSON.stringify(data)
             }).then(res => res.json()).then(result => {
                 console.log(result);
+                alert('order added to the cart')
             })
         }
         e.target.reset();
@@ -77,7 +78,7 @@ const Purchase = () => {
     }
 
     return (
-        <form onSubmit={handleSubmit} className="flex items-center justify-center container mx-auto gap-10">
+        <form onSubmit={handleSubmit} className="md:flex items-center justify-center container mx-auto gap-10">
             <div className="">
                 <div className="card w-96 shadow-lg border mx-auto">
                     <h1 className="text-semibold text-blue-400 my-5 text-2xl">User Information</h1>
@@ -93,7 +94,7 @@ const Purchase = () => {
                     </div>
                 </div>
             </div>
-            <div className="card w-96 shadow-xl my-10 border">
+            <div className="card w-96 shadow-xl my-10 border mx-auto">
                 <figure><img src={img} alt="Shoes" /></figure>
                 <div className="card-body text-left">
                     <h2 className="card-title">{toolName}</h2>
