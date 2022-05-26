@@ -2,7 +2,7 @@ import React from 'react';
 
 const Blogs = () => {
     return (
-        <div className="w-screen mt-20 container mx-auto text-justify">
+        <div className="w-screen mt-20 container mx-auto text-justify md:p-0 p-5">
             <div className="my-5">
                 <h1 className="font-semibold">How will you improve the performance of a React Application?</h1>
                 <p>
@@ -97,6 +97,13 @@ const Blogs = () => {
                     Unit tests are typically automated tests written and run by software developers to ensure that a section of an application (known as the "unit") meets its design and behaves as intended.[2] In procedural programming, a unit could be an entire module, but it is more commonly an individual function or procedure. In object-oriented programming, a unit is often an entire interface, such as a class, or an individual method.[3] By writing tests first for the smallest testable units, then the compound behaviors between those, one can build up comprehensive tests for complex applications.[2]
 
                     To isolate issues that may arise, each test case should be tested independently. Substitutes such as method stubs, mock objects,[4] fakes, and test harnesses can be used to assist testing a module in isolation.
+                </p>
+            </div>
+
+            <div className="my-5">
+                <h1 className="font-semibold">Why you do not set the state directly in React. For example, if you have const [products, setProducts] = useState([]). Why you do not set products = [...] instead, you use the setProducts</h1>
+                <p>
+                    We do not set the state directly in React. It will give error message. Instead we use setProducts to store data on the state. After that when we need to use the data which is save on the state, we just put the products in curly brackets to  display in the ui
                 </p>
             </div>
         </div>
